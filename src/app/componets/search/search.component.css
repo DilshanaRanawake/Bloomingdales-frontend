@@ -1,0 +1,13 @@
+.sbar{
+    height: 30px;
+    width: 220px;
+    border: none;
+}
+.sbar:focus{
+    height: 30px;
+    width: 500px;
+    outline: none;
+} 
+.searchbar{
+    border-bottom: 1px solid #aaafb4;
+}

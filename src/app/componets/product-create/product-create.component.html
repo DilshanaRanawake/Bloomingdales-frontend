@@ -1,0 +1,64 @@
+<div class="main-content">
+  <div class="section-content section-content-p35">
+    <div class="container-fluid">
+      <form [formGroup]="productForm" class="example-form">
+
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Product Category</mat-label>
+          <mat-select formControlName="categoryName">
+            <mat-option (onSelectionChange)="onSelectionChange($event)"  *ngFor="let productCategory of productCategories" [value]="productCategory.categoryName">
+              {{productCategory.categoryName}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Item Id</mat-label>
+          <input [readonly]="true" value="{{productId}}" type="text" matInput>
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>name</mat-label>
+          <input type="text" matInput formControlName="name">
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Description</mat-label>
+          <input type="text" matInput formControlName="description">
+        </mat-form-field>
+        <br>
+
+
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Unit Price</mat-label>
+          <input type="number" matInput formControlName="unit_price">
+        </mat-form-field>
+        <br>
+
+
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Product Image (URL)</mat-label>
+          <input type="text" matInput formControlName="image_url">
+        </mat-form-field>
+        <br>
+
+
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Units</mat-label>
+          <input type="number" matInput formControlName="units_in_stock">
+        </mat-form-field>
+        <br>
+
+
+        <button mat-raised-button (click)="onSaveProduct()" color="warn" type="submit">
+          Submit
+        </button>
+
+      </form>
+
+    </div>
+    </div>
+    </div>

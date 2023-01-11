@@ -1,0 +1,18 @@
+<form>
+  <div class="form-header searchbar">
+    <input #myInput
+           [(ngModel)]="searchText"
+           [formControl]='myControl'
+           class="sbar"
+           type="text"
+           placeholder="Search for products ..."
+           (keyup.enter)="doSearch(myInput.value)"
+    />
+
+    <button (click)="doSearch(myInput.value)">
+      <i class="fa fa-search" style="color: rgb(0, 0, 0)"
+         aria-hidden="true"></i>
+    </button>
+  </div>
+
+</form>

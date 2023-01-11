@@ -1,0 +1,63 @@
+<div class="page-container parent">
+  <div class="menu-sidebar child">
+    <H2>SALE & CLEARENCE</H2>
+    <a href="#ab">All Sale & Clearence</a>
+    <a href="#ab">Women</a>
+    <a href="#ab">Shoes</a>
+    <a href="#ab">Handbags</a>
+    <a href="#ab">Jewelry & Accessories</a>
+    <a href="#ab">Beauty</a>
+    <a href="#ab">Men</a>
+    <a href="#ab">Kids</a>
+    <a href="#ab">Home</a>
+    <a href="#ab">Plus</a>
+    <br>
+    <H2>DESIGNERS EVENT: 30-50% OFF</H2>
+    <a href="#ab">Shop All</a>
+    <a href="#ab">Women's Clothing</a>
+    <a href="#ab">Shoes</a>
+    <a href="#ab">Handbags</a>
+    <a href="#ab">Men's</a>
+    <a href="#ab">Accessories</a>
+  </div>
+  <div class="main-content child">
+      <div class="section-content section-content-p35 productBox">
+        <div class="container-fluid">
+          <div  *ngFor="let product of products" class="divprdct" >
+            <div  class="card">
+              
+                <a routerLink="/products/{{product.id}}" class="col-md-4">
+                  <img class="imgprduct" src="{{product.image_url}}">
+                </a>
+                <hr>
+                <div class="row no-gutters"></div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <div class="card-title">{{product.name}}</div>
+                      <div class="unit_price">{{product.unit_price | currency:'USD'}}</div>
+                    </div>
+                    <button (click)="addToCart(product)" class="btn btn-warning btnss m-3">Add to cart</button>
+                    <button  routerLink="/products/{{product.id}}" class="btn m-3  btnss btn-primary">Details</button>
+
+                  </div>
+              </div>
+            </div>
+
+            <div *ngIf="products?.length==0" role="alert" class="alert alert-warning col-md-12">
+              No Products found.
+            </div>
+          </div>
+        </div>
+        </div>
+          <mat-paginator [length]="theTotalElements"
+                        [pageSize]="thePageSize"
+                        [pageSizeOptions]="[ 5, 10, 25]"
+                        [pageIndex]="thePageNumber"
+                        (page)="pageEvent=loadServerData($event)"
+                        aria-label="Select page">
+          </mat-paginator>
+
+        
+      
+    </div>
+

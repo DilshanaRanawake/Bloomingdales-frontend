@@ -1,0 +1,38 @@
+<div class="main-content">
+  <div class="section-content section-content-p35 formCss1">
+    <div class="container-fluid">
+      <form [formGroup]="signupForm">
+        <div class="outer">
+          <mat-form-field appearance="outline">
+            <mat-label>First Name</mat-label>
+            <input formControlName="fName" type="text" matInput placeholder="Monica">
+          </mat-form-field>
+          <br>
+          <mat-form-field appearance="outline">
+            <mat-label>Last Name</mat-label>
+            <input  formControlName="lName" type="text" matInput placeholder="Geller">
+          </mat-form-field>
+          <br>
+          <mat-form-field appearance="outline">
+            <mat-label>Username</mat-label>
+            <input formControlName="userName" type="text" matInput placeholder="Monica_Geller">
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <input formControlName="password"  type="password" matInput >
+          </mat-form-field>
+          <br>
+          <br>
+
+        </div>
+        <mat-action-row>
+          <button (click)="onSignup()" [disabled]="signupForm.invalid" mat-raised-button type="submit" mat-button color="primary">Sign Up</button>
+          <span class="spacer"></span>
+          <li><a routerLinkActive="mat-accent" mat-button color="primary" routerLink="/auth/login">Already Sign up? Login</a></li>
+        </mat-action-row>
+      </form>
+
+    </div>
+    </div>
+    </div>
