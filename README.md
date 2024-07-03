@@ -10,6 +10,8 @@
 
 ## sql script -> src/main/java/com/bloomingdale/sql_script/db_bloomingdale.sql
 
+Backend url -> https://github.com/DilshanaRanawake/Bloomingdales-backend
+
 ## Screenshots of the Website
 
 
