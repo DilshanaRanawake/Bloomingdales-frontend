@@ -1,0 +1,30 @@
+<div class="main-content">
+  <div class="section-content section-content-p35 formCss1">
+    <div class="container-fluid">
+
+        <form [formGroup]="loginForm">
+          <div class="outer">
+            <mat-form-field appearance="outline">
+              <mat-label>Enter your username</mat-label>
+              <input  formControlName="username" type="text" matInput>
+            </mat-form-field>
+            <br>
+
+            <mat-form-field appearance="outline">
+              <mat-label>Password</mat-label>
+              <input formControlName="password"  type="password" matInput >
+            </mat-form-field>
+            <br>
+            <br>
+          </div>
+          <mat-action-row>
+            <button (click)="onLogin()" [disabled]="loginForm.invalid" mat-raised-button type="submit" color="warn">Login</button>
+            <span class="spacer"></span>
+            <li><a routerLinkActive="mat-accent" mat-raised-button color="primary" routerLink="/auth/signup">Haven't Sign up? Sign Up</a></li>
+          </mat-action-row>
+        </form>
+
+      </div>
+
+    </div>
+    </div>

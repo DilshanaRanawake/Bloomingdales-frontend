@@ -1,0 +1,29 @@
+.sbar {
+    height: 30px;
+    width: 220px;
+    border: none;
+    transition: width 0.3s ease; /* Smooth transition for width change */
+  }
+  
+  .sbar:focus {
+    width: 500px; /* Increase width on focus */
+    outline: none; /* Remove outline on focus (optional) */
+  }
+  
+  .searchbar {
+    border-bottom: 1px solid #aaafb4;
+    margin-bottom: 10px; /* Add some bottom margin for spacing */
+    max-width: 100%; /* Ensure search bar doesn't overflow its container */
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .sbar {
+      width: 180px; /* Adjust width for smaller screens */
+    }
+  
+    .sbar:focus {
+      width: 300px; /* Adjust width on focus for smaller screens */
+    }
+  }
+  

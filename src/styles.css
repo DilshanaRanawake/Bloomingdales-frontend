@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+
+/*
+ * ----------------------------
+ * Common CSS
+ * ----------------------------
+ */
+
+*{
+  margin:0;
+  padding:0;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box
+}
+/* html, body {padding:0; margin:0; height:100%;}
+footer{position: absolute; bottom: 0; left: 0; right: 0;overflow:hidden;} */
+body{
+  font-family:Poppins,sans-serif;
+  font-weight:400;
+  font-size:16px;
+  line-height:1.625;
+  color:#666;
+}
+
+ul{
+  margin:0
+}
+
+button,input[type=button]{
+  cursor:pointer
+}
+
+button:focus,input:focus{
+  outline:0
+}
+
+input{
+  border:none
+}
+
+button{
+  border:none;
+  background:0 0
+}
+
+img{
+  max-width:100%;
+  height:auto
+}
+
+p{
+  margin:0
+}
+
+h1,h2,h3,h4,h5,h6{
+  color:#333;
+  font-weight:700;
+  margin:0;
+  line-height:1.2
+}
+
+h1{
+  font-size:36px
+}
+
+h2{
+  font-size:30px
+}
+
+h3{
+  font-size:24px
+}
+
+h4{
+  font-size:18px
+}
+
+h5{
+  font-size:15px
+}
+
+h6{
+  font-size:13px
+}
+
+
+a:active,a:focus,a:hover{
+  text-decoration:none;
+  outline:0
+}
+
+a,a:hover{
+  -webkit-transition:all .3s ease;
+  -o-transition:all .3s ease;
+  -moz-transition:all .3s ease;
+  transition:all .3s ease
+}
+
+/*Layout Css*/
+.section-content-p35{
+  padding:0;
+}
+
+.page-wrapper{
+  overflow:hidden;
+  background:#e5e5e5;
+  padding-bottom:8vh;
+  border: 1px solid blue;
+}
+
+.page-container{
+  background:white;
+}
+
+.productBox{
+  width: 1000px;
+  
+}
+.card{
+  width: 300px;
+  display: flex;
+  position: relative;
+}
+.child {
+  display: inline-block;
+  padding: 1rem 1rem;
+  vertical-align: text-top;
+}
+.child a{
+  display: flex;
+}
+
+
+
+
+
+/*
+ * ----------------------------
+ * Header Desktop Section
+ * ----------------------------
+ */
+
+.number{
+  padding:6px 0
+}
+
+.arrows i{
+  font-size:30px;
+  padding:4px 4px
+}
+
+section{
+  position:relative
+}
+
+.section-content{
+  
+  padding-top: 30px;
+  margin:0 auto;
+  z-index:1
+}
+
+.section-content-p30{
+  padding:0 30px
+}
+
+
+
+
+
+.total{
+  background:#205b8d;
+  line-height:43px;
+  color:#fff;
+  border-radius:30px;
+  border:1px solid #0da8e4;
+  float:left;
+  margin-top:7px;
+  padding-left:17px
+}
+
+.total span{
+  display:inline-block;
+  background:#fff;
+  padding:0 13px;
+  color:#000;
+  border-top-right-radius:20px;
+  border-bottom-right-radius:20px;
+  margin-left:11px
+}
+
+.form-header{
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-moz-box;
+  display:-ms-flexbox;
+  display:flex
+}
+
+.au-btn-submit{
+  position:relative;
+  right:0;
+  min-width:95px;
+  color:#fff;
+  border:1px solid #205b8d;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:43px;
+  background:#205b8d
+}
+
+.au-btn-submit:hover{
+  background:#05143f
+}
+
+.au-btn-submit>i{
+  font-size:20px;
+  color:#fff;
+  position:absolute;
+  top:50%;
+  left:50%;
+  -webkit-transform:translate(-50%,-50%);
+  -moz-transform:translate(-50%,-50%);
+  -ms-transform:translate(-50%,-50%);
+  -o-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%)
+}
+
+/*
+ * ----------------------------
+ * Left Menu Bar
+ * ----------------------------
+ */
+
+
+
+.logo a{
+  text-decoration: none;
+}
+.logo a:hover{
+  font-weight: bolder;
+  font-size: 110%;
+}
+
+
+.navbar-sidebar{
+  padding:68px 35px;
+  padding-bottom:0
+}
+
+.navbar-sidebar .navbar-list li a{
+  text-decoration: none;
+  display:block;
+  color: white;
+  font-size:16px;
+  padding:5px 0
+}
+
+.navbar-sidebar .navbar-list li a i{
+  margin-right:19px
+}
+
+.navbar-sidebar .navbar-list li a:hover{
+  font-size: 130%;
+}
+
+/*
+ * ----------------------------
+ * Header Mobile Section
+ * ----------------------------
+ */
+
+
+.main-content.page-m{
+  padding:15% 15%!important
+}
+
+/*
+ * ----------------------------
+ * Products List
+ * ----------------------------
+ */
+
+
+
+.items select {
+  width: 100px;
+  height: 40px;
+  border-radius: 40px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  outline: 0;
+  margin-left: 5px;
+}
+
+.price{
+  margin:15px 0 0;
+  font-size: 2.2em;
+  color: crimson;
+}
+.card-title{
+  font-size: 2em;
+  font-weight:bolder;
+  padding-bottom: 1em;
+}
+.container-fluid{
+  width: 100%;
+  
+}
+.productBox{
+  justify-content: space-between;
+}
+.card h2{
+  font-size:15px;
+  padding-bottom:0;
+  font-weight:500;
+  color:#585858
+}
+
+/*
+ * ----------------------------
+ * Shopping Cart Checkout
+ * ----------------------------
+ */
+
+.form-area{
+  background:#e5e5e5;
+  position:relative;
+  margin-bottom:45px;
+  padding:50px 20px;
+  border:3px solid #ccc
+}
+.form-area h3{
+  position:absolute;
+  top:-26px;
+  left:13px;
+  background:#e5e5e5;
+  padding:10px 20px;
+  font-weight:500;
+  z-index:23;
+  display:inline-block
+}
+.input-space{
+  margin-bottom:20px
+}
+.input-space label{
+  padding-left:31px;
+  font-size:14px;
+  margin-bottom:50px
+}
+.input-space input[type=text]{
+  width:100%;
+  height:40px;
+  border-radius:30px;
+  outline:0;
+  padding:10px;
+  border:1px solid #ccc
+}
+.input-space select{
+  width:100%;
+  height:40px;
+  border-radius:30px;
+  outline:0;
+  padding:0 10px;
+  border:1px solid #ccc
+}
+.au-checkbox{
+  display:block;
+  position:relative;
+  cursor:pointer;
+  font-size:22px;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+}
+.au-checkbox input{
+  position:absolute;
+  opacity:0;
+  cursor:pointer
+}
+.au-checkmark{
+  position:absolute;
+  top:0;
+  left:0;
+  height:22px;
+  width:22px;
+  background-color:#fff!important;
+  border:2px solid #e5e5e5;
+  -webkit-border-radius:2px;
+  -moz-border-radius:2px;
+  border-radius:2px
+}
+.au-checkbox:hover input~.au-checkmark{
+  background-color:transparent
+}
+.au-checkbox input:checked~.au-checkmark{
+  background-color:#fff
+}
+.au-checkmark:after{
+  content:"";
+  position:absolute;
+  display:none
+}
+.au-checkbox input:checked~.au-checkmark:after{
+  display:block
+}
+label.date{
+  padding-top:8px
+}
+.au-checkbox .au-checkmark:after{
+  left:5px;
+  top:-1px;
+  width:9px;
+  height:15px;
+  border:solid #0da8e4;
+  border-width:0 4px 4px 0;
+  -webkit-border-radius:2px;
+  -moz-border-radius:2px;
+  border-radius:2px;
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  -o-transform:rotate(45deg);
+  transform:rotate(45deg)
+}
+option:first-child{
+  color:#ccc
+}
+select{
+  color:#828482
+}
+
+/*
+ * ----------------------------
+ * Shopping Cart Details
+ * ----------------------------
+ */
+
+.table{
+  margin:0
+}
+table.table.table-bordered{
+  border:1px solid #ccc;
+  background:#fff
+}
+.table-bordered td,.table-bordered th{
+  border:1px solid #dee2e6
+}
+table.table.table-bordered th{
+  
+  padding:7px
+}
+.table-responsive{
+  padding-right:1px
+}
+.items select{
+  width:100px;
+  height:40px;
+  border-radius:40px;
+  padding-left:15px;
+  margin-bottom:10px;
+  outline:0;
+  margin-left:5px
+}
+
+/*
+ * ----------------------------
+ * Product Details
+ * ----------------------------
+ */
+
+.price{
+  margin:15px 0 0;
+  font-weight:800;
+
+  color: crimson;
+}
+.detail-section{
+  margin-top:60px
+}
+
+.detail-img{
+  width:30%;
+}
+/**/
+
+/*
+ * ----------------------------
+ * Buttons
+ * ----------------------------
+ */
+
+.btn-info{
+  color:#fff;
+  background-color:#0da8e4!important;
+  border-color:#0da8e4!important
+}
+a.primary-btn{
+  background:#05143f;
+  padding:7px 20px;
+  text-align:center;
+  display:inline-block;
+  color:#fff;
+  border-radius:2px;
+  font-size:14px;
+  margin-top:5px
+}
+a.primary-btn:hover{
+  background:#0da8e4;
+  color:#fff
+}
+
+.active-link {
+  color: #ef5777;
+}
+
+/*
+ * ----------------------------
+ * Footer section
+ * ----------------------------
+ */
+
+
+footer{
+  background:#232324;
+  z-index:1;
+  position:relative;
+  text-align:center
+}
+footer li a{
+  color:#313131;
+  font-weight:500
+}
+footer ul li{
+  display:inline-block;
+  font-size:14px;
+  padding:10px 20px
+}
+
+/*
+ * ----------------------------
+ * Media Queries
+ * ----------------------------
+ */
+
+@media (max-width:1600px){
+  .au-input-xl{
+    min-width:290px
+  }
+}
+@media (max-width:1315px) and (min-width:992px){
+  
+}
+@media (max-width:1570px) and (min-width:992px){
+  .header-navbar ul li a{
+    padding:25px 15px
+  }
+}
+@media (max-width:1315px) and (min-width:992px){
+  .header-navbar ul li a{
+    font-size:13px;
+    padding:27px 15px
+  }
+  .header-navbar ul li a i{
+    margin-right:5px
+  }
+}
+
+@media (min-width:1200px){
+  .container{
+    max-width:1320px
+  }
+  .btnss{
+    margin-top: 0%;
+  }
+}
+
+@media (min-width:992px) and (max-width:1199px){
+
+  
+}
+
+
+@media (max-width:991px){
+  .section-content-p30{
+    padding:0
+  }
+  .page-container{
+    position:relative;
+    top:88px;
+    padding-left:0
+  }
+  .page-wrapper{
+    background:#e5e5e5;
+    padding-bottom:12vh
+  }
+  .main-content{
+    padding-top:50px;
+    padding-bottom:100px
+  }
+  
+  .form-header{
+    -webkit-box-pack:center;
+    -webkit-justify-content:center;
+    -moz-box-pack:center;
+    -ms-flex-pack:center;
+    justify-content:center
+  }
+  .au-input-xl{
+    min-width:500px
+  }
+  .logo{
+    text-align:center
+  }
+
+
+ 
+  .section-content.section-content-p30.e-spc{
+    padding-top:100px
+  }
+
+
+}
+
+
+@media (max-width:767px){
+  .au-input-xl{
+    min-width:150px
+  }
+ 
+  .main-content.page-m{
+    padding:10% 0!important
+  }
+
+  .section-content.section-content-p30.e-spc{
+    padding-top:100px
+  }
+
+
+  a.logo img{
+    width:110px
+  }
+
+  
+  .footer-pagination{
+    text-align:center
+  }
+
+  .page-container{
+    background:#e5e5e5;
+    position:relative;
+  }
+
+  .total span{
+    display:inline-block;
+    background:#fff;
+    padding:0 10px;
+    color:#000;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    margin-left:6px
+  }
+  .total{
+    background:#205b8d;
+    line-height:30px;
+    color:#fff;
+    border-radius:30px;
+    border:1px solid #205b8d;
+    float:left;
+    margin-top:9px;
+    padding-left:12px
+  }
+  
+}
+

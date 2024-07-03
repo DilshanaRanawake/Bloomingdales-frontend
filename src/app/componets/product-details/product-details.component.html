@@ -1,0 +1,47 @@
+<div class="page-container parent">
+  <div class="menu-sidebar child">
+    <H2>SALE & CLEARENCE</H2>
+    <a href="#ab">All Sale & Clearence</a>
+    <a href="#ab">Women</a>
+    <a href="#ab">Shoes</a>
+    <a href="#ab">Handbags</a>
+    <a href="#ab">Jewelry & Accessories</a>
+    <a href="#ab">Beauty</a>
+    <a href="#ab">Men</a>
+    <a href="#ab">Kids</a>
+    <a href="#ab">Home</a>
+    <a href="#ab">Plus</a>
+    <br>
+    <H2>DESIGNERS EVENT: 30-50% OFF</H2>
+    <a href="#ab">Shop All</a>
+    <a href="#ab">Women's Clothing</a>
+    <a href="#ab">Shoes</a>
+    <a href="#ab">Handbags</a>
+    <a href="#ab">Men's</a>
+    <a href="#ab">Accessories</a>
+  </div>
+
+  <div class="main-content child">
+    <div class="section-content section-content-p35">
+
+        <div class="details-section">
+          <div class="container-fluid">
+            
+            <img src="{{product.image_url}}" class="imgprduct">
+            <h1 class="mt-2">{{product.name}}</h1>
+            <div class="unit_price">
+              {{product.unit_price | currency:'USD'}}
+            </div>
+            <button (click)="addToCart(product)" class="btn btn-warning btn-sm btnss mt-4">Add to cart</button>
+            <hr>
+            <h2>Description</h2>
+            <p>{{product.description}}</p>
+
+            <a class="back-button" routerLink="/products" class="mt-5"><i class="fa-solid fa-arrow-left"></i> &nbsp; Back to Product List</a>
+
+          </div>
+        </div>
+
+      </div>
+  </div>
+</div>

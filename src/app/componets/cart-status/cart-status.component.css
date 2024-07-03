@@ -1,0 +1,22 @@
+.btnimage {
+    width: 30px;
+  }
+  
+  .cart-area {
+    padding: 0;
+    margin: 0;
+    height: 70px;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .btnimage {
+      width: 20px; /* Adjust width for smaller screens */
+    }
+  
+    .cart-area {
+      height: auto; /* Adjust height to auto for smaller screens */
+      min-height: 50px; /* Set minimum height */
+    }
+  }
+  

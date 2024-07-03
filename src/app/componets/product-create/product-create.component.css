@@ -1,0 +1,15 @@
+.example-full-width {
+  width: 100%;
+}
+
+.example-form {
+  margin: 0 auto; /* Center align the form */
+  width: 70%; /* Set a default width */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .example-form {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+}

@@ -1,0 +1,121 @@
+
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="app.component.css">
+  </head>
+  <body><header>
+      <div>
+          <ul class="nav1 nav2">
+               <li class="nav-item">
+                <a class="nav-link" href="#">STORES & EVENTS</a>
+              </li>
+              <li class="nav-item">|</li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SHOPPING SERVICES</a>
+              </li>
+              <li class="nav-item">|</li>
+              <li class="nav-item">
+                  <ul class="nav2">
+                      <li><a class="nav-link" href="#"><img width="25" height="25" src=".\assets\slflag.jpg" alt=""></a></li>
+                      <li><a class="nav-link" href="#">LKR</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+      <hr>
+      <div class="nav3">
+          <input type="checkbox" name="" id="toggler">
+          <label for="toggler" class="fas fa-bars"></label>
+          <div class="logo"><img width="280" height="45" src=".\assets\Logo_Site.png" alt=""></div>
+          <div>
+              <ul class="input-group1">
+                  <li><div class="input-group1 input-group2">
+                      <app-search></app-search>
+                  </div></li>
+                  
+                  <li><app-cart-status></app-cart-status>
+                  </li>
+              </ul>  
+          </div>
+      </div>
+      
+        <app-product-category-menu></app-product-category-menu>
+        
+      <hr></header>
+
+      <router-outlet></router-outlet>
+
+      
+        <footer class="footer">
+          <div class="container">
+              <div class="row">
+                  <div class="footer-col">
+                      <h4>CUSTOMER SERVICE</h4>
+                      <ul>
+                          <li><a href="#">1-800-777-0000</a></li>&nbsp;&nbsp;
+                          <li><a href="#">FAQs & Help</a></li>&nbsp;&nbsp;
+                          <li><a href="#">Visitor Services</a></li>&nbsp;&nbsp;
+                          <li><a href="#">Domestic Site FAQs</a></li>&nbsp;&nbsp;
+                          <li class="list1">
+                              <a href="#">Shipping to</a>&nbsp;&nbsp;
+                              <a href="#"><img width="25" height="25" src=".\assets\slflag.jpg" alt=""></a>&nbsp;&nbsp;
+                              <a href="#">go to U.S. Site</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="footer-col">
+                      <h4>YOUR ORDER</h4>
+                      <ul>
+                          <li><a href="#">Order Status & History</a></li>&nbsp;&nbsp;
+                          <li><a href="#">Shipping Policy</a></li>&nbsp;&nbsp;
+                          <li><a href="#">Returns & Exchanges</a></li>
+                      </ul>
+                  </div>
+                  <div class="footer-col">
+                      <h4>ABOUT BLOOMINGDALE'S</h4>
+                      <ul>
+                          <li><a href="#">About Us</a></li>&nbsp;&nbsp;
+                          <li><a href="#">b the change</a></li>&nbsp;&nbsp;
+                          <li><a href="#">Careers</a></li>
+                      </ul>
+                  </div>
+                  <div class="footer-col">
+                      <h4>FOLLOW US</h4>
+                      <div class="social-links">
+                          <a href="#"><i class="fa-solid fa-mobile fa-xl" style="color: black"></i></a>
+                          <a href="#"><i class="fa-brands fa-instagram fa-xl" style="color: black"></i></a>
+                          <a href="#"><i class="fa-brands fa-pinterest fa-xl" style="color: black"></i></a>
+                          <a href="#"><i class="fa-brands fa-facebook fa-xl" style="color: black"></i></a>
+                          <a href="#"><i class="fa-brands fa-twitter fa-xl" style="color: black"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+      <hr>
+      <footer class="footer2">
+          <ul>
+              <li class="nav-item2">
+               <a class="nav-link2" href="#">Terms of Use</a>
+             </li>&nbsp;&nbsp;
+             <li class="nav-item2">|</li>&nbsp;&nbsp;
+             <li class="nav-item2">
+               <a class="nav-link2" href="#">Privacy</a>
+             </li>
+             <li class="nav-item2">|</li>&nbsp;&nbsp;
+             <li class="nav-item2">
+              <a class="nav-link2" href="#">Cookie Preferences</a>
+            </li>&nbsp;&nbsp;
+            <li class="nav-item2">|</li>&nbsp;&nbsp;
+            <li class="nav-item2">
+              <a class="nav-link2" href="#">Do Not Sell or Share My Personal information</a>
+            </li>&nbsp;&nbsp;
+            <li class="nav-item2">|</li>&nbsp;&nbsp;
+            <li class="nav-item2">
+              <a class="nav-link2" href="#">CA Privacy Rights</a>
+            </li>
+         </ul>
+      </footer>
+  </body>
+</html>  

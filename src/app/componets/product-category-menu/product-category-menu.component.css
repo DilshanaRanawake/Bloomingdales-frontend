@@ -1,0 +1,35 @@
+.lisT {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 15px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .navItem {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .navItem:hover {
+    color: #ef5777;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .lisT {
+      flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+      justify-content: center; /* Center align items */
+      padding: 8px 5px; /* Adjust padding for smaller screens */
+      font-size: 12px; /* Decrease font size for smaller screens */
+    }
+  
+    .navItem {
+      margin: 0 10px; /* Add margin between navigation items */
+    }
+  }
+  

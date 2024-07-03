@@ -1,0 +1,74 @@
+/* Default styles */
+.outer {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.formCss1 {
+  height: 500px;
+}
+
+.mat-form-field {
+  width: 100%;
+}
+
+form {
+  margin: 0 auto;
+}
+
+mat-action-row {
+  display: flex;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  display: flex;
+}
+
+.spacer {
+  padding: 0 5px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .outer {
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: 90%; /* Limit maximum width for very large screens */
+    margin: 0 auto; /* Center align */
+  }
+
+  .formCss1 {
+    height: auto; /* Adjust height to auto for smaller screens */
+    min-height: 300px; /* Set minimum height */
+  }
+
+  ul {
+    flex-direction: column; /* Stack list items vertically on smaller screens */
+    text-align: center; /* Center align list items */
+  }
+
+  li {
+    margin-bottom: 10px; /* Add space between list items */
+  }
+
+  .mat-action-row {
+    position: relative; /* Reset position to static for centering */
+    left: auto;
+    transform: none;
+    margin-top: 20px; /* Add margin from top */
+  }
+}

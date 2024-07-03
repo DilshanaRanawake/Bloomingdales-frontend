@@ -1,0 +1,10 @@
+<div class="cart-area">
+  <a class="m-lg-5" routerLink="/cart-details">
+      <img class="btnimage" src="..\..\..\assets\bktcart.png" alt="">
+  </a>
+
+  <button mat-stroked-button color="warn" *ngIf="isLoggedIn() && (userRole ==='Admin')" routerLink="/product-create">New Product</button>
+  <button mat-stroked-button color="warn" routerLink="auth/login" *ngIf="!isLoggedIn()" type="button" >Login</button>
+  <button mat-stroked-button color="warn" routerLink="auth/signup" *ngIf="!isLoggedIn()" type="button" >Signup</button>
+  <button mat-stroked-button color="warn" *ngIf="isLoggedIn()" type="button" (click)="logout()" >Logout</button>
+</div>
